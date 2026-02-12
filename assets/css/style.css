@@ -251,3 +251,33 @@ p, li { font-size: 1rem; line-height: 1.6; }
 .project-card {
   text-align: center;      /* isi card rata tengah */
 }
+
+/* Soft Skills kotak sejajar */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Dark mode override */
+[data-theme="dark"] .skill-card {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  box-shadow: none;
+}
