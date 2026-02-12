@@ -38,3 +38,36 @@ ul {
   list-style-type: square;
   padding-left: 20px;
 }
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* supaya bisa turun ke bawah di layar kecil */
+}
+
+.about-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* foto bulat */
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* foto pindah ke atas teks */
+    text-align: center;
+  }
+
+  .about-photo img {
+    width: 140px;   /* ukuran lebih kecil di HP */
+    height: 140px;
+    margin-bottom: 15px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
