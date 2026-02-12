@@ -46,7 +46,24 @@ body {
 [data-theme="dark"] section {
   background-color: #1e1e1e !important;
   color: #f0f0f0 !important;
-  box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+/* Warna teks saat mode gelap */
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+  color: #f0db4f; /* kuning cerah agar kontras */
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] li {
+  color: #f0f0f0; /* abu terang agar jelas di latar gelap */
+}
+
+[data-theme="dark"] a {
+  color: #00c6ff;
+}
+[data-theme="dark"] a:hover {
+  color: #fff;
 }
 
 /* Navigasi */
@@ -126,14 +143,11 @@ input:checked + .slider:before {
   filter: brightness(1.5);
 }
 
-/* Card style untuk tiap section */
+/* Section penuh tanpa kotak */
 section {
-  margin: 30px auto;
-  max-width: 800px;
-  padding: 30px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;          /* penuh layar */
+  padding: 60px 20px;   /* ruang dalam */
+  background: #fff;     /* default background */
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInSection 1s ease forwards;
@@ -284,22 +298,4 @@ ul {
 @keyframes fadeInSection {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
-}
-/* Warna teks saat mode gelap */
-[data-theme="dark"] h2,
-[data-theme="dark"] h3 {
-  color: #f0db4f; /* kuning cerah agar kontras */
-}
-
-[data-theme="dark"] p,
-[data-theme="dark"] li {
-  color: #f0f0f0; /* abu terang agar jelas di latar gelap */
-}
-
-/* Jika ingin link lebih kontras di mode gelap */
-[data-theme="dark"] a {
-  color: #00c6ff;
-}
-[data-theme="dark"] a:hover {
-  color: #fff;
 }
