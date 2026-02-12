@@ -32,6 +32,24 @@ nav a:hover {
   color: #fff;
 }
 
+/* About Me & Education rata tengah */
+#about, #education {
+  text-align: center;
+}
+
+#about p {
+  max-width: 800px;   /* biar teks tidak terlalu melebar */
+  margin: 0 auto;     /* otomatis rata tengah */
+}
+
+#education .education-item {
+  justify-content: center; /* logo + teks rata tengah */
+}
+
+#education .education-item div {
+  text-align: left;   /* teks tetap rapi di samping logo */
+}
+
 /* Toggle switch */
 .toggle-container { display: flex; align-items: center; gap: 10px; }
 .switch { position: relative; display: inline-block; width: 50px; height: 24px; }
