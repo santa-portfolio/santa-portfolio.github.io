@@ -229,3 +229,25 @@ p, li { font-size: 1rem; line-height: 1.6; }
 [data-theme="dark"] .experience-card li {
   color: #ddd;
 }
+
+/* Judul dan isi rata tengah untuk Experience, Skills, Projects */
+#experience, #skills, #projects {
+  text-align: center;
+}
+
+#experience h2, #skills h2, #projects h2 {
+  text-align: center;
+}
+
+#skills ul {
+  display: inline-block;   /* supaya list tetap rapi tapi posisinya di tengah */
+  text-align: left;        /* isi list tetap rata kiri agar mudah dibaca */
+}
+
+.projects-container {
+  justify-items: center;   /* project card rata tengah */
+}
+
+.project-card {
+  text-align: center;      /* isi card rata tengah */
+}
