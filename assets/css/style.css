@@ -1,20 +1,40 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  line-height: 1.6;
-}
-nav {
-  background: #333;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
+/* Card style untuk tiap section */
 section {
-  margin-top: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* Background berbeda tiap section */
+#about {
+  background-color: #f9f9f9;
+}
+#education {
+  background-color: #eef6ff;
+}
+#skills {
+  background-color: #fef6e4;
+}
+#projects {
+  background-color: #f4f9f4;
+}
+#contact {
+  background-color: #fff0f0;
+}
+
+/* Heading */
 h2 {
-  color: #333;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* List styling */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
