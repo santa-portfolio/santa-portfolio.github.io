@@ -244,3 +244,51 @@ body[data-theme="dark"] .card a:hover {
     font-size: 12px;
   }
 }
+
+/* Soft Skills layout */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.skill {
+  background: #5C4033; /* coklat gelap */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* jarak ikon dan teks */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(212, 163, 115, 0.8);
+}
+
+.skill i {
+  font-size: 18px;
+}
+
+/* Dark mode untuk Soft Skills */
+body[data-theme="dark"] .skills .skill {
+  background: #3E2C1C;
+  color: #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+body[data-theme="dark"] .skills .skill:hover {
+  box-shadow: 0 0 10px rgba(212, 163, 115, 0.8);
+}
+
+
+
+
+
