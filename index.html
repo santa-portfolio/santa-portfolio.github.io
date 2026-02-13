@@ -4,162 +4,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Santa Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Font Awesome untuk ikon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body data-theme="light">
+<body>
 
-  <!-- Navigasi -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Work Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-
-    <!-- Toggle Dark/Light Mode -->
-    <div class="toggle-container">
-      <label class="switch">
-        <input type="checkbox" id="mode-toggle">
-        <span class="slider"></span>
-      </label>
-      <i class="fas fa-sun toggle-icon"></i>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-photo">
-        <img src="assets/img/IMG_20230620_193626.jpg" alt="Santa Riyanti Tampubolon" />
-      </div>
-      <div class="hero-text">
-        <h1>Hi, There!</h1>
-        <h2>I'm Santa Riyanti Tampubolon</h2>
-        <h3>Data Analyst & Business Strategist</h3>
-        <p>Blending analytical expertise with business insight to transform data into actionable strategies that drive growth and innovation.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Me -->
+  <!-- About Me Section -->
   <section id="about">
     <h2>ABOUT ME</h2>
-    <p>Hi, I'm Santa! A data analyst with a passion for transforming complex data into actionable insights. 
-    I specialize in extracting meaningful patterns from data to drive strategic business decisions. My experience includes 
-    data cleaning, statistical analysis, and developing comprehensive dashboards that effectively communicate key metrics 
-    to stakeholders. I thrive in collaborative environments where analytical thinking and problem solving skills contribute 
-    to organizational growth and innovation.</p>
+    <div class="about-container">
+      <img src="assets/img/IMG_20230620_193626.jpg" alt="Profile Photo" class="profile-photo">
+      <p>Hello, I’m Santa. I specialize in data analytics, dashboard design, and bridging technical and non-technical audiences. Passionate about personal branding and recruiter-friendly portfolio presentation.</p>
+    </div>
   </section>
 
-  <!-- Education -->
+  <!-- Education Section -->
   <section id="education">
     <h2>EDUCATION</h2>
-    <div class="education-item">
-      <img src="assets/img/revou-logo.png" alt="RevoU Logo" class="education-logo">
-      <div>
-        <strong>RevoU – Jakarta, Indonesia</strong> (Oct 2025 – May 2026)<br>
-        Full Stack Data Analysis Program
+    <div class="education-container">
+      <div class="education-card">
+        <img src="assets/img/logo ipb.png" alt="Logo IPB" class="edu-logo">
+        <h3>S1 Ekonomi, Universitas XYZ</h3>
+      </div>
+      <div class="education-card">
+        <img src="assets/img/logo revou.png" alt="Logo RevoU" class="edu-logo">
+        <h3>Data Analytics Certification</h3>
+        <p>SQL, Python, Power BI</p>
       </div>
     </div>
-    <div class="education-item">
-      <img src="assets/img/ipb-logo.png" alt="IPB Logo" class="education-logo">
-      <div>
-        <strong>Institut Pertanian Bogor (IPB University)</strong> (Jun 2006 – Aug 2009)<br>
-        GPA 3.56/4.00 – Bachelor of Economic and Management<br>
-        Minor: Agribusiness Entrepreneurship (Consumer Behaviour)
-      </div>
-    </div>
-
-    <h3>Certifications</h3>
-    <ul>
-      <li>RevoU Mini Course – Intro To Data Analytics</li>
-      <li>RevoU Full Stack Data Analysis</li>
-    </ul>
   </section>
 
-  <!-- Work Experience -->
+  <!-- Work & Organization Experience -->
   <section id="experience">
-    <h2>WORK EXPERIENCE</h2>
-    <div class="experience-block">
-      <h3>Data Analyst Projects</h3>
-      <p>Hands-on experience in analyzing datasets, creating dashboards, and providing actionable insights for business growth.</p>
-      <ul>
-        <li>Performed exploratory data analysis (EDA) and hypothesis testing</li>
-        <li>Built SQL queries for data exploration</li>
-        <li>Developed Python scripts for data cleaning and visualization</li>
-        <li>Created interactive dashboards in Tableau and Power BI</li>
-      </ul>
+    <h2>WORK & ORGANIZATION EXPERIENCE</h2>
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>Internship at PERTAMINA EP, Java Region — Human Resources Function</h3>
+        <p><em>August 2008 – February 2009</em></p>
+        <ul>
+          <li>Maintained HR databases with personnel records, ensuring compliance accuracy and streamlining reporting.</li>
+          <li>Facilitated onboarding for new hires by preparing orientation materials and delivering policy briefings.</li>
+          <li>Coordinated recruitment activities by posting vacancies and screening resumes.</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h3>Treasury of Marketing Directory – HIMPRO Centre of Management</h3>
+        <p><em>August 2007 – August 2008</em></p>
+        <ul>
+          <li>Maintained positive cash flow and reduced financing costs.</li>
+          <li>Optimized budget utilization while aligning marketing events with financial resources.</li>
+          <li>Delivered integrated financial marketing reports and fostered collaboration between finance and marketing teams.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- Soft Skills Section -->
   <section id="skills">
-    <h2>SKILLS</h2>
+    <h2>SOFT SKILLS</h2>
     <div class="skills-container">
-      <div class="skills-block">
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Analytical and Critical Thinking</li>
-          <li>Fast Learner</li>
-          <li>Communication</li>
-          <li>Leadership</li>
-          <li>Teamwork</li>
-        </ul>
-      </div>
-      <div class="skills-block">
-        <h3>Hard Skills</h3>
-        <ul>
-          <li>Data Analysis (EDA, Hypothesis Testing, Regression Linear, RFM Cluster Analysis, KMeans Clustering)</li>
-          <li>Data Analysis Tools: Spreadsheets, SQL (Google Big Query), Python (Google Colab)</li>
-          <li>Data Visualization Tools: Tableau, Power BI</li>
-        </ul>
-      </div>
+      <div class="skill-card">Communication</div>
+      <div class="skill-card">Teamwork</div>
+      <div class="skill-card">Problem Solving</div>
+      <div class="skill-card">Adaptability</div>
+      <div class="skill-card">Leadership</div>
+      <div class="skill-card">Time Management</div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Hard Skills Section -->
+  <section id="hard-skills">
+    <h2>HARD SKILLS</h2>
+    <div class="skills-container">
+      <div class="skill-card"><img src="assets/img/Microsoft Office.png" alt="Microsoft Office"></div>
+      <div class="skill-card"><img src="assets/img/Google Sheets.png" alt="Google Sheets"></div>
+      <div class="skill-card"><img src="assets/img/Google Big Query Logo.png" alt="Google BigQuery"></div>
+      <div class="skill-card"><img src="assets/img/Google Colab.png" alt="Google Colab"></div>
+      <div class="skill-card"><img src="assets/img/Tableau Logo.png" alt="Tableau"></div>
+      <div class="skill-card"><img src="assets/img/Power BI Logo.png" alt="Power BI"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <h2>MY PROJECTS</h2>
     <div class="projects-container">
       <div class="project-card">
-        <img src="assets/img/project1.png" alt="Business Problem Preview">
-        <a href="https://github.com/santa-portfolio/cv-portfolio/tree/main/Portfolio/01_business_problem" target="_blank">Business Problem Definition</a>
-        <p>Documentation of business problems and analysis objectives.</p>
+        <img src="assets/img/logo revou.png" alt="RevoU Project">
+        <h3>RevoU Data Analytics Project</h3>
+        <p>Dashboard and KPI analysis for e-commerce consumer goods.</p>
+        <a href="https://github.com/santa-portfolio/revou-project" target="_blank">View Project</a>
       </div>
       <div class="project-card">
-        <img src="assets/img/project2.png" alt="Statistics Preview">
-        <a href="https://github.com/santa-portfolio/cv-portfolio/tree/main/Portfolio/02_statistics_spreadsheets" target="_blank">Statistics & Spreadsheets</a>
-        <p>Initial data analysis using Excel/Google Sheets.</p>
+        <img src="assets/img/logo ipb.png" alt="IPB Project">
+        <h3>IPB Collaboration Project</h3>
+        <p>Interactive portfolio features and responsive web design.</p>
+        <a href="https://github.com/santa-portfolio/ipb-project" target="_blank">View Project</a>
       </div>
-      <!-- Tambahkan project lain dengan gambar preview -->
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>CONTACTS</h2>
+    <h2>CONTACT</h2>
     <div class="contact-container">
-      <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +62 813 2429 4004</p>
-      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:shantariyani@gmail.com">shantariyanti@gmail.com</a></p>
-      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/santa-tamps" target="_blank">linkedin.com/in/santa-tamps</a></p>
-      <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://santa-portfolio.github.io" target="_blank">santa-portfolio/github.io</a></p>
+      <div class="contact-card">
+        <img src="assets/img/Microsoft Office.png" alt="Email Logo">
+        <p>Email: santa@example.com</p>
+      </div>
+      <div class="contact-card">
+        <img src="assets/img/logo revou.png" alt="LinkedIn Logo">
+        <p>LinkedIn: <a href="https://linkedin.com/in/santa" target="_blank">linkedin.com/in/santa</a></p>
+      </div>
+      <div class="contact-card">
+        <img src="assets/img/logo ipb.png" alt="GitHub Logo">
+        <p>GitHub: <a href="https://github.com/santa-portfolio" target="_blank">github.com/santa-portfolio</a></p>
+      </div>
     </div>
   </section>
-
-  <!-- Script toggle -->
-  <script>
-    const toggle = document.getElementById('mode-toggle');
-    toggle.addEventListener('change', () => {
-      const theme = toggle.checked ? 'dark' : 'light';
-      document.body.setAttribute('data-theme', theme);
-    });
-  </script>
 
 </body>
 </html>
