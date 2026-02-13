@@ -330,3 +330,44 @@ body[data-theme="dark"] .contact-item i {
   text-shadow: 0 0 8px #ffd700; /* glow lebih kuat di dark mode */
 }
 
+/* Container horizontal */
+.contact-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Default (Light Mode) */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4b2e2e; /* teks coklat gelap */
+}
+
+.contact-item i {
+  color: #8B6B3F; /* coklat keemasan */
+  text-shadow: 0 0 6px rgba(212,163,115,0.8);
+}
+
+/* Dark Mode */
+body[data-theme="dark"] .contact-item {
+  color: #eee; /* teks terang agar kontras */
+}
+
+body[data-theme="dark"] .contact-item i {
+  color: #ffd700; /* kuning glow */
+  text-shadow: 0 0 8px #ffd700;
+}
+
+
+
+
+
+
