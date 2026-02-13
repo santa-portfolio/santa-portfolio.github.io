@@ -295,5 +295,38 @@ body[data-theme="dark"] .skills .skill:hover {
   vertical-align: middle;
 }
 
+/* Contact Horizontal */
+.contact-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4b2e2e; /* default untuk light mode */
+}
+
+.contact-item i {
+  color: #ffd700; /* kuning glow */
+  text-shadow: 0 0 6px #ffd700;
+}
+
+/* Dark Mode untuk Contact */
+body[data-theme="dark"] .contact-item {
+  color: #eee; /* teks terang agar kontras */
+}
+
+body[data-theme="dark"] .contact-item i {
+  color: #ffd700; /* tetap kuning glow */
+  text-shadow: 0 0 8px #ffd700; /* glow lebih kuat di dark mode */
+}
 
