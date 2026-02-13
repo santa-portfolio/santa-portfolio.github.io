@@ -366,7 +366,62 @@ body[data-theme="dark"] .contact-item i {
   text-shadow: 0 0 8px #ffd700;
 }
 
+/* Ikon default */
+#certification .card i {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #8B6B3F; /* coklat keemasan default di light mode */
+  transition: all 0.3s ease;
+}
 
+/* Glow ikon */
+#certification .card i:hover {
+  transform: scale(1.1);
+}
+
+/* Glow card */
+#certification .card {
+  transition: all 0.3s ease;
+}
+
+#certification .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Light mode */
+body[data-theme="light"] #certification .card i:hover {
+  color: #8B6B3F; /* tetap coklat keemasan */
+  text-shadow: 0 0 8px rgba(139, 107, 63, 0.8); /* glow coklat lembut */
+}
+
+body[data-theme="light"] #certification .card:hover {
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.6); /* glow coklat-emas */
+}
+
+/* Dark mode */
+body[data-theme="dark"] #certification .card i {
+  color: #ffd700; /* emas terang default di dark mode */
+}
+
+body[data-theme="dark"] #certification .card i:hover {
+  text-shadow: 0 0 10px #ffd700; /* glow kuning lebih kuat */
+}
+
+body[data-theme="dark"] #certification .card:hover {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* glow emas */
+}
+
+/* Mobile responsif */
+@media (max-width: 768px) {
+  #certification .card-container {
+    flex-direction: column;
+  }
+  #certification .card {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
 
 
 
