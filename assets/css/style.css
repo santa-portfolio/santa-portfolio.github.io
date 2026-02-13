@@ -288,7 +288,12 @@ body[data-theme="dark"] .skills .skill:hover {
   box-shadow: 0 0 10px rgba(212, 163, 115, 0.8);
 }
 
-
+#hard-skills .skill img {
+  width: 24px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 
 
 
