@@ -1,3 +1,4 @@
+/* Reset dasar */
 body {
   font-family: 'Prata', serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   line-height: 1.6;
 }
 
+/* Navigasi */
 nav {
   background: #0072ff;
   padding: 10px;
@@ -24,12 +26,14 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Heading */
 h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
+/* About Me */
 .about-container {
   text-align: center;
   margin: 20px auto;
@@ -44,18 +48,20 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* Container umum */
 .education-container,
 .experience-container,
 .skills-container,
 .projects-container,
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   justify-items: center;
   margin: 20px;
 }
 
+/* Card umum */
 .education-card,
 .experience-card,
 .skill-card,
@@ -68,6 +74,7 @@ h2 {
   text-align: center;
 }
 
+/* Projects link */
 .project-card a {
   display: inline-block;
   padding: 8px 12px;
@@ -81,11 +88,13 @@ h2 {
   background: #005bb5;
 }
 
+/* Contact icons */
 .contact-card i {
   margin-bottom: 10px;
   color: #0072ff;
 }
 
+/* Toggle switch */
 .toggle-container {
   text-align: center;
   margin: 10px;
@@ -130,4 +139,6 @@ input:checked + .slider {
   background-color: #0072ff;
 }
 
-input
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
