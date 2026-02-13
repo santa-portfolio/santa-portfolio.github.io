@@ -423,6 +423,50 @@ body[data-theme="dark"] #certification .card:hover {
   }
 }
 
+/* Default ikon Contact */
+.contact-item i {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Default teks Contact */
+.contact-item span,
+.contact-item a {
+  transition: all 0.3s ease;
+}
+
+/* Hover efek umum */
+.contact-item i:hover,
+.contact-item span:hover,
+.contact-item a:hover {
+  transform: scale(1.05);
+}
+
+/* Light mode */
+body[data-theme="light"] .contact-item i {
+  color: #8B6B3F; /* coklat keemasan default */
+}
+body[data-theme="light"] .contact-item i:hover {
+  text-shadow: 0 0 8px rgba(139, 107, 63, 0.8); /* glow coklat lembut */
+}
+body[data-theme="light"] .contact-item span:hover,
+body[data-theme="light"] .contact-item a:hover {
+  color: #8B6B3F;
+  text-shadow: 0 0 6px rgba(139, 107, 63, 0.7);
+}
+
+/* Dark mode */
+body[data-theme="dark"] .contact-item i {
+  color: #ffd700; /* emas terang default */
+}
+body[data-theme="dark"] .contact-item i:hover {
+  text-shadow: 0 0 10px #ffd700; /* glow kuning lebih kuat */
+}
+body[data-theme="dark"] .contact-item span:hover,
+body[data-theme="dark"] .contact-item a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
 
 
 
