@@ -468,5 +468,39 @@ body[data-theme="dark"] .contact-item a:hover {
   text-shadow: 0 0 8px #ffd700;
 }
 
+/* Foto Hero interaktif */
+.hero-photo {
+  width: 25vw;
+  max-width: 180px;
+  min-width: 120px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.hero-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(212, 163, 115, 0.8); /* glow coklat-emas */
+}
+
+/* Nama Hero interaktif */
+.hero h1 {
+  font-size: 28px;
+  margin-top: 10px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Light mode */
+body[data-theme="light"] .hero h1:hover {
+  color: #8B6B3F; /* coklat keemasan */
+  text-shadow: 0 0 8px rgba(139, 107, 63, 0.8);
+}
+
+/* Dark mode */
+body[data-theme="dark"] .hero h1:hover {
+  color: #ffd700; /* emas terang */
+  text-shadow: 0 0 10px #ffd700;
+}
 
