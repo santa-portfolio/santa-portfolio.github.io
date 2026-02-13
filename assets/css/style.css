@@ -13,6 +13,9 @@ nav {
   background: #0072ff;
   padding: 10px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -26,56 +29,78 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Heading */
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #fff;
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #0072ff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+}
+
+/* Section heading */
 h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
-/* About Me */
-.about-container {
-  text-align: center;
-  margin: 20px auto;
-  max-width: 800px;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-/* Container umum */
-.education-container,
-.experience-container,
-.skills-container,
-.projects-container,
-.contact-container {
+/* Card layout */
+.card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  justify-items: center;
   margin: 20px;
 }
 
-/* Card umum */
-.education-card,
-.experience-card,
-.skill-card,
-.project-card,
-.contact-card {
+.card {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
-/* Projects link */
-.project-card a {
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* List dalam card (Experience) */
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Contact icons */
+.card i {
+  margin-bottom: 10px;
+  color: #0072ff;
+}
+
+/* Project links */
+.card a {
   display: inline-block;
   padding: 8px 12px;
   background: #0072ff;
@@ -84,61 +109,6 @@ h2 {
   text-decoration: none;
 }
 
-.project-card a:hover {
+.card a:hover {
   background: #005bb5;
-}
-
-/* Contact icons */
-.contact-card i {
-  margin-bottom: 10px;
-  color: #0072ff;
-}
-
-/* Toggle switch */
-.toggle-container {
-  text-align: center;
-  margin: 10px;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 24px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0;
-  right: 0; bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 24px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #0072ff;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
 }
