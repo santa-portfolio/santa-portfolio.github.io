@@ -3,7 +3,7 @@ body {
   font-family: 'Prata', serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0; /* abu-abu terang default */
+  background: #f0f0f0; /* default terang */
   color: #333;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
@@ -11,13 +11,13 @@ body {
 
 /* Navigasi */
 nav {
-  background: #666; /* abu-abu gelap */
+  background: #8B6B3F; /* coklat keemasan */
   padding: 10px;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  position: relative; /* supaya toggle bisa ditempel */
+  position: relative;
 }
 
 nav a {
@@ -25,21 +25,23 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s;
   padding: 6px 10px;
   border-radius: 4px;
 }
 
-nav a:hover {
-  background: #888; /* hover abu-abu lebih terang */
+nav a:hover,
+nav a:active {
+  background: #D4A373; /* kuning kecoklatan */
   color: #fff;
+  box-shadow: 0 0 8px rgba(212, 163, 115, 0.8); /* glow hangat */
 }
 
 /* Toggle switch inline di sebelah Contact */
 .toggle-container {
-  display: inline-block;   /* ikut barisan link nav */
-  margin-left: 15px;       /* jarak dari link Contact */
-  vertical-align: middle;  /* sejajar dengan teks */
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
 }
 
 .switch {
@@ -82,7 +84,7 @@ nav a:hover {
 }
 
 input:checked + .slider {
-  background-color: #666;
+  background-color: #8B6B3F;
 }
 
 input:checked + .slider:before {
@@ -94,7 +96,7 @@ input:checked + .slider:before {
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #999, #ccc); /* gradasi abu-abu */
+  background: linear-gradient(135deg, #B08968, #D4A373); /* gradasi coklat-kuning */
   color: #fff;
   transition: background 0.3s, color 0.3s;
 }
@@ -112,17 +114,19 @@ input:checked + .slider:before {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #fff;
-  color: #333;
+  background: #D4A373; /* kuning kecoklatan */
+  color: #fff;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-.btn:hover {
-  background: #ddd;
-  color: #000;
+.btn:hover,
+.btn:active {
+  background: #B08968; /* coklat lebih gelap */
+  color: #fff;
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.9); /* glow hangat */
 }
 
 /* Section heading */
@@ -170,46 +174,47 @@ h2 {
 .card a {
   display: inline-block;
   padding: 8px 12px;
-  background: #666;
+  background: #8B6B3F;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .card a:hover {
-  background: #444;
+  background: #B08968;
+  box-shadow: 0 0 8px rgba(212, 163, 115, 0.8);
 }
 
 /* Dark mode */
 body[data-theme="dark"] {
-  background: #222;
+  background: #3E2C1C;
   color: #eee;
 }
 
 body[data-theme="dark"] nav {
-  background: #333;
+  background: #5C4033;
 }
 
 body[data-theme="dark"] nav a:hover {
-  background: #555;
+  background: #8B6B3F;
 }
 
 body[data-theme="dark"] .hero {
-  background: linear-gradient(135deg, #444, #666);
+  background: linear-gradient(135deg, #3E2C1C, #5C4033);
 }
 
 body[data-theme="dark"] .card {
-  background: #333;
+  background: #5C4033;
   color: #eee;
 }
 
 body[data-theme="dark"] .card a {
-  background: #555;
+  background: #8B6B3F;
 }
 
 body[data-theme="dark"] .card a:hover {
-  background: #777;
+  background: #B08968;
 }
 
 /* Responsive tweaks */
