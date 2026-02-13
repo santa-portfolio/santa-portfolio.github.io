@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
 /* General reset */
 body {
   font-family: 'Roboto', sans-serif;
@@ -19,16 +22,11 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* About Me */
-.about-container {
-  text-align: center;
-  margin: 20px auto;
-  max-width: 800px;
-}
-
+/* Foto profil */
 .profile-photo {
   width: 150px;
-  height: auto;
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
 }
@@ -50,7 +48,9 @@ h3 {
 }
 
 .edu-logo {
-  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
@@ -140,8 +140,9 @@ h3 {
 }
 
 #hard-skills .skill-card img {
-  max-width: 80px;
-  height: auto;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
 /* Projects */
@@ -166,7 +167,9 @@ h3 {
 }
 
 .project-card img {
-  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
@@ -219,7 +222,9 @@ h3 {
 }
 
 .contact-card img {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
