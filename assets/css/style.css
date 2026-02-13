@@ -35,11 +35,11 @@ nav a:hover {
   color: #fff;
 }
 
-/* Toggle switch di pojok kanan nav */
+/* Toggle switch inline di sebelah Contact */
 .toggle-container {
-  position: absolute;
-  top: 12px;
-  right: 20px;
+  display: inline-block;   /* ikut barisan link nav */
+  margin-left: 15px;       /* jarak dari link Contact */
+  vertical-align: middle;  /* sejajar dengan teks */
 }
 
 .switch {
@@ -65,16 +65,20 @@ nav a:hover {
   border-radius: 24px;
 }
 
+/* Ikon matahari & bulan */
 .slider:before {
   position: absolute;
-  content: "";
+  content: "🌞"; /* default terang */
   height: 18px;
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: white;
+  background-color: transparent;
   transition: .4s;
   border-radius: 50%;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
 }
 
 input:checked + .slider {
@@ -83,6 +87,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+  content: "🌙"; /* saat dark mode */
 }
 
 /* Hero Section */
@@ -220,10 +225,6 @@ body[data-theme="dark"] .card a:hover {
     margin: 0 10px;
     font-size: 14px;
   }
-  .toggle-container {
-    top: 8px;
-    right: 12px; /* geser sedikit biar tidak terlalu mepet */
-  }
 }
 
 @media (max-width: 480px) {
@@ -239,10 +240,5 @@ body[data-theme="dark"] .card a:hover {
     display: inline-block;
     margin: 5px;
     font-size: 12px;
-  }
-  .toggle-container {
-    top: 6px;
-    right: 10px; /* lebih rapat di layar kecil */
-    transform: scale(0.9); /* perkecil sedikit toggle */
   }
 }
