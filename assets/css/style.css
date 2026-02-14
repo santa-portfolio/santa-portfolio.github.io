@@ -183,6 +183,30 @@ h2 {
   box-shadow: 0 0 8px rgba(212, 163, 115, 0.8);
 }
 
+/* Projects grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 20px;
+  margin-top: 15px;
+  justify-items: center; /* gambar rata tengah */
+}
+
+.project-item img {
+  width: 100%;        /* menyesuaikan lebar kolom grid */
+  max-width: 200px;   /* batasi ukuran maksimum thumbnail */
+  height: auto;       /* biar proporsi gambar tetap terjaga */
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;     /* supaya gambar rata tengah */
+}
+
+.project-item img:hover {
+  transform: scale(1.05); /* efek hover */
+}
+
+
 /* Dark mode */
 body[data-theme="dark"] {
   background: #3E2C1C;
