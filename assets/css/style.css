@@ -206,6 +206,17 @@ h2 {
   transform: scale(1.05); /* efek hover */
 }
 
+/* Light mode hover */
+body[data-theme="light"] .project-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.8); /* glow coklat-emas */
+}
+
+/* Dark mode hover */
+body[data-theme="dark"] .project-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffd700; /* glow emas terang */
+}
 
 /* Dark mode */
 body[data-theme="dark"] {
