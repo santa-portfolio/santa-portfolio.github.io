@@ -218,6 +218,29 @@ body[data-theme="dark"] .project-item img:hover {
   box-shadow: 0 0 12px #ffd700; /* glow emas terang */
 }
 
+
+/* About Me, Education, Working & Organization Experiences hover */
+#about .card:hover,
+#education .card:hover,
+#experience .card:hover {
+  transform: translateY(-5px); /* card sedikit naik */
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.6); /* glow coklat-emas default */
+}
+
+/* Light mode */
+body[data-theme="light"] #about .card:hover,
+body[data-theme="light"] #education .card:hover,
+body[data-theme="light"] #experience .card:hover {
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.8); /* glow coklat-emas */
+}
+
+/* Dark mode */
+body[data-theme="dark"] #about .card:hover,
+body[data-theme="dark"] #education .card:hover,
+body[data-theme="dark"] #experience .card:hover {
+  box-shadow: 0 0 15px #ffd700; /* glow emas terang */
+}
+
 /* Dark mode */
 body[data-theme="dark"] {
   background: #3E2C1C;
