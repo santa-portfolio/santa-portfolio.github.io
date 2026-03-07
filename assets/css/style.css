@@ -566,11 +566,11 @@ body[data-theme="dark"] .hero h1:hover {
 /* Container utama: Showcase di atas, Other di bawah */
 .portfolio {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* urutan vertikal */
   gap: 40px; /* jarak antar section */
 }
 
-/* Atur grid project agar responsif */
+/* Grid responsif untuk project */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
