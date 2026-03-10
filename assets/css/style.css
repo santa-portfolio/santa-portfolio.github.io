@@ -635,3 +635,23 @@ body[data-theme="dark"] .hero h1:hover {
   height: auto;
 }
 
+
+/* Light mode */
+body[data-theme="light"] #recommendation .card:hover {
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.6); /* glow coklat-emas */
+}
+body[data-theme="light"] #recommendation .card p:hover {
+  color: #8B6B3F; /* teks jadi coklat keemasan */
+  text-shadow: 0 0 8px rgba(139, 107, 63, 0.8); /* glow lembut */
+}
+
+/* Dark mode */
+body[data-theme="dark"] #recommendation .card {
+  color: #ffd700; /* teks default emas terang di dark mode */
+}
+body[data-theme="dark"] #recommendation .card p:hover {
+  text-shadow: 0 0 10px #ffd700; /* glow kuning lebih kuat */
+}
+body[data-theme="dark"] #recommendation .card:hover {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* glow emas */
+}
