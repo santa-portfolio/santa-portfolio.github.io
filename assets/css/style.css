@@ -602,9 +602,6 @@ body[data-theme="dark"] .hero h1:hover {
 }
 
 .tooltip {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
   max-width: 600px;
   background: rgba(255, 255, 255, 0.4);
   color: #222;
