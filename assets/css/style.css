@@ -614,19 +614,15 @@ body[data-theme="dark"] .hero h1:hover {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
   padding: 16px;
-}
 
-.tooltip-text {
-  flex: 2; /* teks lebih lebar */
-}
-
-.tooltip-image {
-  flex: 1; /* gambar di sisi kanan */
-}
-
-.tooltip-image img {
-  width: 220px;   /* lebar tetap agar tidak memanjang */
-  border-radius: 8px;
+  /* default: tersembunyi */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-10px);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .project-item:hover .tooltip {
@@ -638,6 +634,6 @@ body[data-theme="dark"] .hero h1:hover {
 .tooltip img {
   margin-top: 12px;
   border-radius: 8px;
-  max-width: 100%;
+  width: 220px;
   height: auto;
 }
