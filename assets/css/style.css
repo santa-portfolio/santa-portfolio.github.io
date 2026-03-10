@@ -306,7 +306,7 @@ body[data-theme="dark"] .card a:hover {
 /* Soft Skills layout */
 .skills {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 15px;
   justify-content: center;
   margin: 20px auto;
