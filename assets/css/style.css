@@ -594,3 +594,33 @@ body[data-theme="dark"] .hero h1:hover {
   border-radius: 6px;
   margin-bottom: 8px;
 }
+
+
+.tooltip {
+  visibility: hidden;
+  background: #333;
+  color: #fff;
+  padding: 12px;              /* tambah padding agar teks & gambar lega */
+  border-radius: 6px;         /* sudut lebih halus */
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: normal;        /* biar teks bisa wrap ke baris baru */
+  max-width: 300px;           /* batasi lebar tooltip */
+  text-align: left;           /* teks rata kiri */
+  z-index: 10;                /* pastikan muncul di atas elemen lain */
+}
+
+.project-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;                 /* untuk animasi fade-in */
+  transition: opacity 0.3s ease;
+}
+
+.tooltip img {
+  margin-top: 10px;
+  border-radius: 4px;
+  max-width: 100%;            /* biar gambar menyesuaikan lebar tooltip */
+  height: auto;
+}
