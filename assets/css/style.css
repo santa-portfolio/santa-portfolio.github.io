@@ -602,24 +602,18 @@ body[data-theme="dark"] .hero h1:hover {
 }
 
 .tooltip {
-  visibility: hidden;
-  opacity: 0;
-  background: rgba(255, 255, 255, 0.4); /* kaca transparan terang */
-  color: #222;                          /* teks gelap agar kontras */
-  padding: 16px;
+  display: flex;              /* sejajarkan konten horizontal */
+  align-items: flex-start;    /* teks dan gambar sejajar di atas */
+  gap: 20px;                  /* jarak antar teks & gambar */
+  max-width: 600px;           /* lebih lebar agar horizontal */
+  background: rgba(255, 255, 255, 0.4);
+  color: #222;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.6); /* border putih tipis semi-transparan */
-  position: absolute;
-  bottom: 100%;               /* muncul di atas thumbnail */
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
-  max-width: 500px;           /* lebar lebih besar agar horizontal */
-  text-align: left;
-  z-index: 999;
-  backdrop-filter: blur(10px); /* efek kaca blur */
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25); /* shadow lembut */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  padding: 16px;
 }
 
 .project-item:hover .tooltip {
