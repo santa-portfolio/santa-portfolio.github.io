@@ -688,3 +688,44 @@ body[data-theme="dark"] .edu-logo-center {
   border-radius: 8px;
   filter: brightness(1.2); /* sedikit lebih terang */
 }
+
+
+.card {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Popup sertifikat */
+.certificate-popup {
+  position: absolute;
+  top: 110%; /* muncul di bawah card */
+  left: 50%;
+  transform: translateX(-50%) translateY(20px); /* geser sedikit ke bawah */
+  width: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
+}
+
+.certificate-popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Efek hover: fade-in + slide-up */
+.card:hover .certificate-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); /* naik ke posisi normal */
+}
