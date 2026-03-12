@@ -209,20 +209,20 @@ h2 {
 }
 
 .project-item img:hover {
-  transform: scale(3); /* efek hover */
+  transform: scale(1.5); /* efek hover */
   z-index: 10;           /* naik ke atas elemen lain */
 }
 
 /* Light mode hover */
 body[data-theme="light"] .project-item img:hover {
-  transform: scale(3);
+  transform: scale(1.5);
    z-index: 10;
   box-shadow: 0 0 12px rgba(212, 163, 115, 0.8); /* glow coklat-emas */
 }
 
 /* Dark mode hover */
 body[data-theme="dark"] .project-item img:hover {
-  transform: scale(3);
+  transform: scale(1.5);
    z-index: 10;
   box-shadow: 0 0 12px #ffd700; /* glow emas terang */
 }
