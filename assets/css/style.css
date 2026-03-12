@@ -664,3 +664,27 @@ body[data-theme="dark"] #recommendation .card p:hover {
 body[data-theme="dark"] #recommendation .card:hover {
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* glow emas */
 }
+
+
+/* Logo di tengah atas */
+.edu-logo-center {
+  display: block;
+  margin: 0 auto 12px;   /* center horizontal + jarak bawah */
+  width: 60px;
+  height: auto;
+}
+
+/* Light mode logo */
+body[data-theme="light"] .edu-logo-center {
+  background: rgba(0, 0, 0, 0.05); /* lapisan tipis gelap agar logo terlihat */
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* Dark mode logo */
+body[data-theme="dark"] .edu-logo-center {
+  background: rgba(255, 255, 255, 0.1); /* lapisan tipis putih agar kontras */
+  padding: 6px;
+  border-radius: 8px;
+  filter: brightness(1.2); /* sedikit lebih terang */
+}
