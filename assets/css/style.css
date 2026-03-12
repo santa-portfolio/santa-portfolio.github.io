@@ -690,7 +690,7 @@ body[data-theme="dark"] .edu-logo-center {
 }
 
 
-.card {
+#certification .card {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -700,12 +700,11 @@ body[data-theme="dark"] .edu-logo-center {
   margin: 10px;
 }
 
-/* Popup sertifikat */
-.certificate-popup {
+#certification .certificate-popup {
   position: absolute;
-  top: 110%; /* muncul di bawah card */
+  top: 110%;
   left: 50%;
-  transform: translateX(-50%) translateY(20px); /* geser sedikit ke bawah */
+  transform: translateX(-50%) translateY(20px);
   width: 400px;
   background: #fff;
   border: 1px solid #ccc;
@@ -717,15 +716,14 @@ body[data-theme="dark"] .edu-logo-center {
   z-index: 10;
 }
 
-.certificate-popup img {
+#certification .certificate-popup img {
   width: 100%;
   height: auto;
   border-radius: 4px;
 }
 
-/* Efek hover: fade-in + slide-up */
-.card:hover .certificate-popup {
+#certification .card:hover .certificate-popup {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0); /* naik ke posisi normal */
+  transform: translateX(-50%) translateY(0);
 }
