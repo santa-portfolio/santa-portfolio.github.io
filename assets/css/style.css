@@ -702,10 +702,10 @@ body[data-theme="dark"] .edu-logo-center {
 
 #certification .certificate-popup {
   position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  width: 400px;
+  top: 50%; /* sejajar vertikal dengan card */
+  left: 105%; /* geser ke kanan card */
+  transform: translateY(-50%) translateX(20px); /* sedikit bergeser */
+  width: 300px;
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -725,5 +725,5 @@ body[data-theme="dark"] .edu-logo-center {
 #certification .card:hover .certificate-popup {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(-50%) translateX(0); /* animasi slide-in dari kanan */
 }
