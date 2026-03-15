@@ -780,7 +780,7 @@ body.dark-mode .hero-right:hover {
 img.wave {
     animation: wave 1s infinite;
     transform-origin: 70% 70%;
-    height: 64px;       /* ukuran lebih besar, seimbang dengan h1 */
+    height: 80px;       /* ukuran lebih besar, seimbang dengan h1 */
     vertical-align: middle;
-    margin-right: 8px;  /* jarak dengan teks */
+    margin-right: 4px;  /* jarak dengan teks */
 }
