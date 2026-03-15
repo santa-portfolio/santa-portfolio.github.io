@@ -752,19 +752,26 @@ body[data-theme="dark"] .edu-logo-center {
   }
 }
 
-/* Efek hover khusus untuk About Me */
-.hero-right:hover {
-  box-shadow: 0 0 20px rgba(139, 69, 19, 0.8); /* glow coklat emas untuk light mode */
+/* Efek glow untuk box */
+body.light-mode .hero-right:hover {
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.8);
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
 
-/* Mode light */
-body.light-mode .hero-right:hover {
-  box-shadow: 0 0 20px rgba(139, 69, 19, 0.8); /* glow coklat emas */
+body.dark-mode .hero-right:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
-/* Mode dark */
-body.dark-mode .hero-right:hover {
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* glow emas terang */
+/* Efek glow untuk teks */
+body.light-mode .hero-right h2:hover,
+body.light-mode .hero-right p:hover {
+  text-shadow: 0 0 12px rgba(139, 69, 19, 0.8);
+}
+
+body.dark-mode .hero-right h2:hover,
+body.dark-mode .hero-right p:hover {
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.9);
 }
