@@ -782,5 +782,5 @@ img.wave {
     transform-origin: 70% 70%;
     height: 96px;       /* ukuran lebih besar, seimbang dengan h1 */
     vertical-align: middle;
-    margin-right: 0px;  /* jarak dengan teks */
+    margin-right: -2px;  /* jarak dengan teks */
 }
