@@ -752,26 +752,30 @@ body[data-theme="dark"] .edu-logo-center {
   }
 }
 
-/* Efek glow untuk box */
+/* Efek glow gabungan untuk box + teks */
+
+/* Light Mode */
 body.light-mode .hero-right:hover {
-  box-shadow: 0 0 20px rgba(139, 69, 19, 0.8);
+  box-shadow: 0 0 25px rgba(139, 69, 19, 0.8); /* glow coklat emas */
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
 
+body.light-mode .hero-right:hover h2,
+body.light-mode .hero-right:hover p {
+  text-shadow: 0 0 12px rgba(139, 69, 19, 0.8); /* glow coklat emas */
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
 body.dark-mode .hero-right:hover {
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.9); /* glow emas terang */
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
 
-/* Efek glow untuk teks */
-body.light-mode .hero-right h2:hover,
-body.light-mode .hero-right p:hover {
-  text-shadow: 0 0 12px rgba(139, 69, 19, 0.8);
-}
-
-body.dark-mode .hero-right h2:hover,
-body.dark-mode .hero-right p:hover {
-  text-shadow: 0 0 12px rgba(255, 215, 0, 0.9);
+body.dark-mode .hero-right:hover h2,
+body.dark-mode .hero-right:hover p {
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.9); /* glow emas terang */
+  transition: all 0.3s ease;
 }
