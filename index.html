@@ -11,8 +11,25 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body data-theme="light">
+  
+<body class="light-mode">
+  ...
+  <script>
+    const toggle = document.getElementById("mode-toggle");
+    const body = document.body;
 
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        body.classList.remove("light-mode");
+        body.classList.add("dark-mode");
+      } else {
+        body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+      }
+    });
+  </script>
+</body>
+  
   <!-- Navigasi -->
   <nav>
     <a href="#home">Home</a>
