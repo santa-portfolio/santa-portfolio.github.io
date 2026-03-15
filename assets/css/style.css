@@ -727,3 +727,27 @@ body[data-theme="dark"] .edu-logo-center {
   visibility: visible;
   transform: translateY(-50%) translateX(0); /* animasi slide-in dari kanan */
 }
+
+
+.hero-about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+}
+
+.hero-left, .hero-right {
+  flex: 1;
+}
+
+.hero-left {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
