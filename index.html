@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
   
-<body data-theme="light">
+<body class="light-mode">
   
   <!-- Navigasi -->
   <nav>
@@ -33,9 +33,10 @@
 </div>
   </nav>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
   <div class="hero-about-wrapper">
-    
+
     <!-- Hero kiri -->
     <div class="hero-left">
       <img src="assets/img/IMG_20230620_193626.jpg" alt="Profile Photo" class="hero-photo">
@@ -57,6 +58,25 @@
   </div>
 </section>
 
+  <!-- Script toggle -->
+  <script>
+    const toggle = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        body.classList.remove("light-mode");
+        body.classList.add("dark-mode");
+      } else {
+        body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+      }
+    });
+  </script>
+</body>
+</html>
+
+  
 <!-- Projects -->
 <section id="projects">
   <h2>MY PROJECTS</h2>
