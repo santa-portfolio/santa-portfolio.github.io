@@ -751,3 +751,20 @@ body[data-theme="dark"] .edu-logo-center {
     text-align: center;
   }
 }
+
+/* Efek hover khusus untuk About Me */
+.hero-right:hover {
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.8); /* glow coklat emas untuk light mode */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Mode light */
+body.light-mode .hero-right:hover {
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.8); /* glow coklat emas */
+}
+
+/* Mode dark */
+body.dark-mode .hero-right:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* glow emas terang */
+}
