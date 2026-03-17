@@ -737,14 +737,8 @@ body[data-theme="dark"] .edu-logo-center {
   padding: 40px;
 }
 
-.hero-left {
-  flex: 1; /* kiri tetap penuh */
-}
-
-.hero-right {
-  flex: 0.8;          /* kanan lebih kecil proporsinya */
-  max-width: 500px;   /* batasi panjang card About Me */
-  padding: 20px;      /* opsional, biar lebih ringkas */
+.hero-left, .hero-right {
+    flex: 1;
 }
 
 .hero-left {
